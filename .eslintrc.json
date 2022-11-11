@@ -1,35 +1,21 @@
 {
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
     "extends": [
-        "./node_modules/gts/",
-        "next/core-web-vitals",
-        "plugin:jsdoc/recommended",
-        "plugin:import/errors"
+        "eslint:recommended",
+        "plugin:react/recommended"
     ],
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
     "plugins": [
-        "prefer-arrow",
-        "import"
+        "react"
     ],
     "rules": {
-        "prefer-arrow/prefer-arrow-functions": [
-            "error",
-            {
-                "disallowPrototype": true,
-                "singleReturnOnly": true,
-                "classPropertiesAllowed": false
-            }
-        ],
-        "jsdoc/require-jsdoc": [
-            "error"
-        ],
-        "sort-imports": 0,
-        "import/order": [
-            2,
-            {
-                "alphabetize": {
-                    "order": "asc"
-                }
-            }
-        ],
-        "react-hooks/exhaustive-deps": "off",
     }
 }
