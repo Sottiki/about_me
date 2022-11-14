@@ -1,13 +1,19 @@
 import React from "react";
-import { Box, ChakraProvider } from "@chakra-ui/react";
-import Header from "./components/Header";
+import { Center, ChakraProvider } from "@chakra-ui/react";
+import Frame from "./components/Frame/Frame";
 
 function App() {
-  return <ChakraProvider>
-    <Header />
-    <Box>ボデイ</Box>
-    <Box>フッタあ</Box>
-  </ChakraProvider>
+  return (
+    <>
+      <ChakraProvider >
+        <Center>
+          <Frame>
+            <div>a</div>
+          </Frame>
+        </Center>
+      </ChakraProvider>
+    </>
+  )
 }
 
 export default App

@@ -4,7 +4,7 @@ import { ChevronDownIcon } from "@chakra-ui/icons"
 import React from "react";
 
 const Menues = () => {
-    return <Box>
+    return <Box >
         <Menu>
             <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
                 他も知りたい
