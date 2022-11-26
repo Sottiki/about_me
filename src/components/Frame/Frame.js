@@ -1,20 +1,23 @@
 import React from "react"
-import { Box, Center, Stack } from "@chakra-ui/react"
+import { Box, Center, Flex } from "@chakra-ui/react"
 import Header from "./Header"
 import FooterSumple from "./Footer";
 
 function Frame(children) {
     return (
-        <Stack mt="2rem">
+        <Flex m="2rem auto auto" flexDirection="column" minHeight="100vh">
             <Center minWidth="700px" >
                 <Header />
             </Center>
-            {children.children}
-            <Box mt="auto">
-                <FooterSumple />
+
+            <Box mt="1rem" minWidth="700px">
+                {children.children}
             </Box>
 
-        </Stack>
+            <Box m="auto auto 2rem">
+                <FooterSumple />
+            </Box>
+        </Flex >
 
     )
 
